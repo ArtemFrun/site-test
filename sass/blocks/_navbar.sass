@@ -1,0 +1,27 @@
+.navbar
+    //position: fixed
+    left: 0
+    top: 0
+    width: 100%
+    background-color: #333333
+    z-index: 99
+    &-wrap
+        margin: auto
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr
+        align-items: center
+        min-height: 120px
+    &__logo, &__center, &__right
+        display: flex
+        justify-content: center
+        & div
+            padding: 20px
+        & a 
+            text-decoration: none
+            color: #fff
+    &__reg
+        padding: 20 0 !important
+    .logo
+        &__log
+            height: 100px
+            border-radius: 50px
