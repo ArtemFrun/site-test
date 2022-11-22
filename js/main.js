@@ -19,6 +19,31 @@ Fancybox.bind("#gallery a", {
     arrows: false
 });
 
+function chbox(){
+    const slideTab1 = document.getElementById('tab-btn-1');
+    const slideTab2 = document.getElementById('tab-btn-2');
+    const slideTab3 = document.getElementById('tab-btn-3');
+
+    if(slideTab1.checked){
+        let showElement = document.getElementById('content-1');
+        showElement.classList.add('price-tabs__info__show')
+    }    
+
+    if(slideTab2.checked){
+        let showElement = document.getElementById('content-2');
+        showElement.classList.add('price-tabs__info__show')
+    }    
+
+    if(slideTab3.checked){
+        let showElement = document.getElementById('content-3');
+        showElement.classList.add('price-tabs__info__show')
+    }    
+}
+
+
+
+
+
 document.getElementById("price-tabs__btn1").click();
 
 document.addEventListener('DOMContentLoaded', function(){
@@ -29,6 +54,8 @@ document.addEventListener('DOMContentLoaded', function(){
     const password = document.getElementById('password');
     const confirm = document.getElementById('confirm');
     const chackbox = document.getElementById('consent');
+    const successfully = document.getElementById('successfully');
+    const exist = document.getElementById('exist-mail');
     var validationForm = true;
     
     
@@ -44,7 +71,7 @@ document.addEventListener('DOMContentLoaded', function(){
             formData.append('email', email.value);
             formData.append('password', password.value);
             console.log(formData);
-    
+   
             let response = await fetch('',{
                 method: 'POST',
                 body: formData
@@ -56,7 +83,7 @@ document.addEventListener('DOMContentLoaded', function(){
                 let result = await response.json();
                 formPreview.innerHTML = '';
                 form.reset();
-                form.classList.add
+                successfully.classList.add("register__successfully__show")
             } else {
 
             }

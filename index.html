@@ -17,11 +17,11 @@
                         <img class="logo__log" src="./logo.svg" alt="img"/>
                     </div>
                     <div class="navbar__center">
-                        <div class="navbar__price"><a href="">Ціна</a></div>
-                        <div class="navbar__account"><a href="">Кабінет</a></div>
+                        <div class="navbar__price"><a href="#price">Ціна</a></div>
+                        <div class="navbar__account"><a href="#register">Кабінет</a></div>
                     </div>
                     <div class="navbar__right">
-                        <div class="navbar__reg"><a href="">Реєстрація</a></div>
+                        <div class="navbar__reg"><a href="#register">Реєстрація</a></div>
                         <div class="navbar__demo"><a class="button-demo" href="" target="_blank">Демо</a></div>
                     </div>
                 </div>
@@ -159,7 +159,7 @@
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
       </div>
-      <div class="price container">
+      <div class="price container" id="price">
             <h1 class="block-title">Виберіть план для початку</h1>
         
             <div class="price-tabs">
@@ -219,9 +219,15 @@
               </div>
         
               <div class="price-tabs__links">
-                <a id="price-tabs__btn1" href="#content-1">Місяць</a>
-                <a id="price-tabs__btn2" href="#content-2">Квартал</a>
-                <a id="price-tabs__btn3" href="#content-3">Рік</a>
+                <input type="radio" name="tab-btn" id="tab-btn-1" value="" onchange="chbox()" checked>
+                <label for="tab-btn-1">Вкладка 1</label>
+                <input type="radio" name="tab-btn" id="tab-btn-2" value="" onchange="chbox()">
+                <label for="tab-btn-2">Вкладка 2</label>
+                <input type="radio" name="tab-btn" id="tab-btn-3" value="" onchange="chbox()">
+                <label for="tab-btn-3">Вкладка 3</label>
+                <!-- <div id="price-tabs__btn1" href="#content-1">Місяць</div>
+                <div id="price-tabs__btn2" href="#content-2">Квартал</div>
+                <div id="price-tabs__btn3" href="#content-3">Рік</div> -->
               </div>
             </div>
             <div class="cooperation container">
@@ -250,7 +256,7 @@
                     </div>
                 </div>
             </div>
-            <div class="register container">
+            <div class="register container" id="register">
                 <div class="register-wrap">
                     <div class="register__none">
                     </div>
@@ -258,8 +264,8 @@
                         <h2 class="block-title">Реєстрація</h2>
 
                         <form id="form" class="register__form">
-                            <div class="register__successfully">
-
+                            <div class="register__successfully" id="successfully">
+                                Реєстрація успішна
                             </div>
                             <div class="register__form-control">
                                 <label for="name">Ім'я</label>
@@ -288,8 +294,8 @@
                                 <i class="fas fa-times-circle"></i> -->
                                 <small></small>
                             </div>
-                            <div class="register__exist-mail">
-                                
+                            <div class="register__exist-mail" id="exist-mail">
+                                Такий мейл вже існує
                             </div>
                             <button class="button-demo">Зареєструватися</button>
                         </form>
