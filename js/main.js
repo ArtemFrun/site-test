@@ -19,33 +19,27 @@ Fancybox.bind("#gallery a", {
     arrows: false
 });
 
-function chbox(){
-    const slideTab1 = document.getElementById('tab-btn-1');
-    const slideTab2 = document.getElementById('tab-btn-2');
-    const slideTab3 = document.getElementById('tab-btn-3');
+window.onscroll = function(){
+    let navbarFix = document.getElementById('navbar');
+    
+    if(window.scrollY > '600'){
+        navbarFix.classList.add('navbar__fix');
+    } else
+    {
+        navbarFix.classList.remove('navbar__fix');
+    }
+}
+
+function chbox(index){
     const allSlide = document.getElementById('price-tabs');
 
     let child = allSlide.children;
-    console.log(child.length);
     for(let i=0; i<child.length; i++){
         child[i].classList.remove('price-tabs__info__show');
     }
 
-    if(slideTab1.checked){
-        let showElement = document.getElementById('content-1');
-
-        showElement.classList.add('price-tabs__info__show');
-    }    
-
-    if(slideTab2.checked){
-        let showElement = document.getElementById('content-2');
-        showElement.classList.add('price-tabs__info__show');
-    }    
-
-    if(slideTab3.checked){
-        let showElement = document.getElementById('content-3');
-        showElement.classList.add('price-tabs__info__show');
-    }    
+    let showElement = document.getElementById('content-'+index);
+    showElement.classList.add('price-tabs__info__show');
 }
 
 

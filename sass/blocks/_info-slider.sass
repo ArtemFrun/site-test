@@ -11,19 +11,38 @@
         &__content
             display: block
             &__1
-                background-color: #cf9fe2
+                position: relative
+                background: url("../../img/image-9.jpg") no-repeat center center
+                background-size: cover
                 height: 100%
             &__2
-                background-color: #b9acf3
+                position: relative
+                background: url("../../img/image-10.png") no-repeat center center
+                background-size: cover
                 height: 100%
             &__3
-                background-color: #e3eea2
+                position: relative
+                background: url("../../img/image-11.jpg") no-repeat center center
+                background-size: cover
                 height: 100%
+            &__1:before, &__2:before, &__3:before
+                content: ''
+                position: absolute
+                top: 0
+                left: 0
+                right: 0
+                bottom: 0
+                background: rgba(0,0,0,.5)
+                z-index: 2
         &__title, &__text
+            position: relative
+            z-index: 3
             margin: auto
             width: 45%
             color: #fff
         &__video
+            position: relative
+            z-index: 3
             display: flex
             justify-content: center
             padding: 50px
@@ -46,3 +65,4 @@
             border-top: 8px solid transparent
             border-bottom: 8px solid transparent
             border-left: 12px solid #f00
+

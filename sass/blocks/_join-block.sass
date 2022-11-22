@@ -1,20 +1,31 @@
 .join-block
-    background-color: #eee
+    background-color: #fff
     padding-top: 70px
     padding-bottom: 70px
+    position: relative
+    animation: showJoinBlock 1s
     &__title
         text-transform: uppercase
         color: #667378
-        & p
-            padding: 0
+        padding: 0
     &__text
         max-width: 800px
         margin: auto
-        & p
-            color: #667378
-            font-size: 53px
-            line-height: 60px
-            font-weight: bold
+        color: #667378
+        font-size: 53px
+        line-height: 60px
+        font-weight: bold
     &__google-play
         & img
             height: 90px
+
+@keyframes showJoinBlock
+    0% 
+        right: -50%
+        opacity: 0
+    50%
+        right: -25%
+        opacity: 0
+    100%
+        right: 0
+        opacity: 0.5

@@ -8,6 +8,10 @@
         justify-content: space-between
         margin: 50px auto
         max-width: 950px
+        flex-wrap: wrap
+        &__1, &__2, &__3
+            position: relative
+            animation: showLogo 1s
     &__demo
         display: flex
         justify-content: space-between
@@ -16,3 +20,14 @@
         align-items: center
         & h2
             font-size: 32px
+
+@keyframes showLogo
+    0% 
+        left: -20%
+        opacity: 0
+    50%
+        left: -10%
+        opacity: 0
+    100%
+        left: 0
+        opacity: 0.5

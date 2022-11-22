@@ -10,7 +10,7 @@
 </head>
 <body>
     <header class="header">
-        <div class="navbar">
+        <div class="navbar" id="navbar">
             <div class="container">
                 <div class="navbar-wrap">
                     <div class="navbar__logo">
@@ -29,54 +29,72 @@
         </div>
     </header>
     <div class="home container">
-        <div class="home__top">
-            <div class="home__title">
-                <h1 class="">Керуйте своєю командою швидше!</h1>
+        <div class="home-wrap">
+            <div class="home__top">
+                <div class="home__title">
+                    <h1 class="">Керуйте своєю командою швидше!</h1>
+                </div>
+                <div class="home__subtitle">
+                    <h2>Найкраща система контролю автобусних перевезень.</h2>
+                </div>
+                <div class="home__button">
+                    <div class="home__demo"><a class="button-demo" href="" target="_blank">Спробуйте Демо</a></div>
+                </div>
             </div>
-            <div class="home__subtitle">
-                <h2>Найкраща система контролю автобусних перевезень.</h2>
+            <div class="home__bottom">
+                <img src="img/image-1.png" alt="">
             </div>
-            <div class="home__button">
-                <div class="home__demo"><a class="button-demo" href="" target="_blank">Спробуйте Демо</a></div>
-            </div>
-        </div>
-        <div class="home__bottom">
-            <img src="/img/image-1.png" alt="">
+    
         </div>
     </div>
     <div class="benefits container">
         <div class="benefits-wrap">
             <div class="benefits__one">
                 <div class="benefits__image">
-                    <img src="/img/image-2.png">
+                    <img src="img/image-2.png">
                 </div>
-                <h2>Одна платформа</h2>
-                <p class="block-text">Create custom landing page with Shade that convert more visitors than any website.</p>
+                <div class="benefits__text">
+                    <h2>Одна платформа</h2>
+                    <div class="block-text">
+                        Create custom landing page with Shade that convert more visitors than any website.
+                    </div>
+                </div>
             </div>
             <div class="benefits__fast">
                 <div class="benefits__image">
-                    <img src="/img/image-2.png">
+                    <img src="img/image-2.png">
                 </div>
-                <h2>Швидка робота</h2>
-                <p class="block-text">Create custom landing page with Shade that convert more visitors than any website.</p>
+                <div class="benefits__text">
+                    <h2>Швидка робота</h2>
+                    <div class="block-text">
+                        Create custom landing page with Shade that convert more visitors than any website.
+                    </div>
+                </div>
             </div>
             <div class="benefits__functions">
                 <div class="benefits__image">
-                    <img src="/img/image-2.png">
+                    <img src="img/image-2.png">
                 </div>
-                <h2>Багато функцій</h2>
-                <p class="block-text">Create custom landing page with Shade that convert more visitors than any website.</p>
+                <div class="benefits__text">
+                    <h2>Багато функцій</h2>
+                    <div class="block-text">
+                        Create custom landing page with Shade that convert more visitors than any website.
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     <div class="about container">
         <div class="about-top">
-            <div class="abbout__image">
-                <img src="/img/image-3.png" alt="img">
+            <div class="about__image">
+                <img class="about__image__1" src="img/image-13.jpg" alt="img">
+                <img class="about__image__2" src="img/image-14.jpg" alt="img">
             </div>
             <div class="about__description">
                 <h2 class="block-title">Керуйте всім швидше в одному місці.</h2>
-                <p class="block-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate voluptas voluptates doloremque veritatis nam praesentium excepturi, aperiam consectetur molestiae nobis aspernatur quisquam suscipit ab quos eveniet.</p>
+                <div class="block-text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate voluptas voluptates doloremque veritatis nam praesentium excepturi, aperiam consectetur molestiae nobis aspernatur quisquam suscipit ab quos eveniet.
+                </div>
                 <div class="about__demo">
                     <a class="button-demo" href="">Спробуйте Демо</a>
                 </div>
@@ -85,13 +103,16 @@
         <div class="about-bottom">
             <div class="about__description">
                 <h2 class="block-title">Менша команда більша швидкість</h2>
-                <p class="block-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore maxime quaerat possimus reiciendis excepturi adipisci aut corporis, error id illo doloribus provident earum animi labore quidem.</p>
+                <div class="block-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore maxime quaerat possimus reiciendis excepturi adipisci aut corporis, error id illo doloribus provident earum animi labore quidem.
+                </div>
                 <div class="about__demo">
                     <a class="button-demo" href="" target="_blank">Спробуйте Демо</a>
                 </div> 
             </div>
-            <div class="abbout__image">
-                <img src="/img/image-4.png" alt="img">
+            <div class="about__image">
+                <img class="about__image__2" src="img/image-16.jpg" alt="img">
+                <img class="about__image__1" src="img/image-15.jpg" alt="img">
             </div>
         </div>
     </div>
@@ -100,7 +121,7 @@
           <div class="info-slider__slide swiper-slide">
             <div class="info-slider__content__1">
                 <div class="info-slider__video">
-                    <a data-fancybox href="https://youtu.be/J305fi3nZ68">
+                    <a data-fancybox href="https://www.youtube.com/watch?v=Bzzp5Cay7DI">
                         <div class="info-slider__circle">
                             <div class="info-slider__triangle"></div>
                         </div>
@@ -110,16 +131,16 @@
                     <h2 class="block-title">Загальний огляд 1</h2>
                 </div>
                 <div class="info-slider__text">
-                    <p class="block-text">
+                    <div class="block-text">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor aspernatur, inventore reprehenderit fuga odio fugit minima sint? Fugiat doloremque esse suscipit maxime deserunt. Impedit aliquid culpa harum eveniet dignissimos architecto esse similique. Nulla et deleniti perspiciatis id blanditiis nihil sunt! Voluptatem perspiciatis repellat saepe, voluptatibus culpa vitae voluptate fugiat temporibus aliquam laborum, quo reiciendis iste magnam? Nobis veniam ad earum eveniet exercitationem illo quibusdam molestiae harum tempora consequatur natus, deserunt, est tempore corrupti!
-                    </p>
+                    </div>
                 </div>
             </div>
           </div>
           <div class="info-slider__slide swiper-slide">
             <div class="info-slider__content__2">
                 <div class="info-slider__video">
-                    <a data-fancybox href="https://youtu.be/J305fi3nZ68">
+                    <a data-fancybox href="https://www.youtube.com/watch?v=jfKfPfyJRdk">
                         <div class="info-slider__circle">
                             <div class="info-slider__triangle"></div>
                         </div>
@@ -129,16 +150,16 @@
                     <h2 class="block-title">Загальний огляд 2</h2>
                 </div>
                 <div class="info-slider__text">
-                    <p class="block-text">
+                    <div class="block-text">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam ducimus, laborum nulla optio doloribus voluptas similique voluptatum unde? Cumque fuga fugiat iste obcaecati consequuntur laborum ducimus, repellat quia soluta animi excepturi qui error quam consectetur voluptates temporibus aliquid. Itaque, iusto.
-                    </p>
+                    </div>
                 </div>
             </div>
           </div>
           <div class="info-slider__slide swiper-slide">
             <div class="info-slider__content__3">
                 <div class="info-slider__video">
-                    <a data-fancybox href="https://youtu.be/J305fi3nZ68">
+                    <a data-fancybox href="https://www.youtube.com/watch?v=rUxyKA_-grg">
                         <div class="info-slider__circle">
                             <div class="info-slider__triangle"></div>
                         </div>
@@ -148,9 +169,9 @@
                     <h2 class="block-title">Загальний огляд 3</h2>
                 </div>
                 <div class="info-slider__text">
-                    <p class="block-text">
+                    <div class="block-text">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi officia sunt pariatur natus ex nesciunt sit, autem consequuntur vero molestias mollitia. Optio dolores praesentium nam repellat at ratione nobis! Quam nobis blanditiis dolorem. In, aliquid dolores, esse quod iure ipsum commodi doloribus, animi fugiat earum officia necessitatibus ab dignissimos consectetur aperiam veritatis praesentium error ex. Molestias voluptatum odit voluptatibus officiis, quia dignissimos temporibus. Facere, asperiores?
-                    </p>
+                    </div>
                 </div>
             </div>
           </div>
@@ -160,7 +181,7 @@
         <div class="swiper-button-next"></div>
       </div>
       <div class="price container" id="price">
-            <h1 class="block-title">Виберіть план для початку</h1>
+            <h1 class="price__title block-title">Виберіть план для початку</h1>
         
             <div class="price-tabs" id="price-tabs">
               <div class="price-tabs__info price-tabs__info__show" id="content-1">
@@ -169,13 +190,13 @@
                 </div>
                 <div class="price-tabs__info__summ">
                     $50
-                    <p>/ Місяць</p>
+                    <span>/ Місяць</span>
                 </div>
                 <div class="price-tabs__info__description">
                     TEST1
-                    <p>
+                    <div>
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus impedit facere possimus aliquam sapiente facilis? Libero maiores nulla a ducimus itaque sed nobis alias aliquam in quia, iusto, minus quidem! 1
-                    </p>
+                    </div>
                 </div>
                 <div class="price-tabs__info__demo">
                     <a class="button-demo" href="" target="_blank">Спробуйте Демо</a>
@@ -187,13 +208,13 @@
                 </div>
                 <div class="price-tabs__info__summ">
                     $150
-                    <p>/ Квартал</p>
+                    <span>/ Квартал</span>
                 </div>
                 <div class="price-tabs__info__description">
                     TEST2
-                    <p>
+                    <div>
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus impedit facere possimus aliquam sapiente facilis? Libero maiores nulla a ducimus itaque sed nobis alias aliquam in quia, iusto, minus quidem! 2
-                    </p>
+                    </div>
                 </div>
                 <div class="price-tabs__info__demo">
                     <a class="button-demo" href="" target="_blank">Спробуйте Демо</a>
@@ -205,13 +226,13 @@
                 </div>
                 <div class="price-tabs__info__summ">
                     $500
-                    <p>/ Рік</p>
+                    <span>/ Рік</span>
                 </div>
                 <div class="price-tabs__info__description">
                     TEST3
-                    <p>
+                    <div>
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus impedit facere possimus aliquam sapiente facilis? Libero maiores nulla a ducimus itaque sed nobis alias aliquam in quia, iusto, minus quidem! 3
-                    </p>
+                    </div>
                 </div>
                 <div class="price-tabs__info__demo">
                     <a class="button-demo" href="" target="_blank">Спробуйте Демо</a>
@@ -219,29 +240,29 @@
               </div>
         
               <div class="price-tabs__links">
-                <input type="radio" name="tab-btn" id="tab-btn-1" value="" onchange="chbox()" checked>
-                <label for="tab-btn-1">Вкладка 1</label>
-                <input type="radio" name="tab-btn" id="tab-btn-2" value="" onchange="chbox()">
-                <label for="tab-btn-2">Вкладка 2</label>
-                <input type="radio" name="tab-btn" id="tab-btn-3" value="" onchange="chbox()">
-                <label for="tab-btn-3">Вкладка 3</label>
+                <input type="radio" name="tab-btn" id="tab-btn-1" value="" onchange="chbox('1')" checked>
+                <label for="tab-btn-1">Місяць</label>
+                <input type="radio" name="tab-btn" id="tab-btn-2" value="" onchange="chbox('2')">
+                <label for="tab-btn-2">Квартал</label>
+                <input type="radio" name="tab-btn" id="tab-btn-3" value="" onchange="chbox('3')">
+                <label for="tab-btn-3">Рік</label>
               </div>
             </div>
             <div class="cooperation container">
                 <div class="cooperation__text">
-                    <p class="block-text">
+                    <div class="block-text">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem impedit id sequi nulla! Quis, dignissimos quos nisi non debitis eveniet.
-                    </p>
+                    </div>
                 </div>
                 <div class="cooperation__logo">
                     <div class="cooperation__logo__1">
-                        <img src="/img/image-5.png" alt="">
+                        <img src="img/image-5.png" alt="">
                     </div>
                     <div class="cooperation__logo__2">
-                        <img src="/img/image-6.png" alt="">
+                        <img src="img/image-6.png" alt="">
                     </div>
                     <div class="cooperation__logo__3">
-                        <img src="/img/image-7.png" alt="">
+                        <img src="img/image-7.png" alt="">
                     </div>
                 </div>
                 <div class="cooperation__demo">
@@ -300,15 +321,15 @@
                 </div>
             </div>
             <div class="join-block container">
-                <div class="join-block__title">
-                    <p class="block-text">Час вживати дій</p>
+                <div class="join-block__title block-text" >
+                    Час вживати дій
                 </div>
-                <div class="join-block__text">
-                    <p class="block-text">Приєднуйся до понад 30 000 щасливих користувачів і швидко запускайте свій продукт.</p>
+                <div class="join-block__text block-text">
+                    Приєднуйся до понад 30 000 щасливих користувачів і швидко запускайте свій продукт.
                 </div>
                 <div class="join-block__google-play">
                     <a href="http://play.google.com/store/apps/details?id=com.google.android.apps.maps" target="_blank">
-                        <img src="/img/google-play-badge.png" alt="">
+                        <img src="img/google-play-badge.png" alt="">
                     </a>
                 </div>
             </div>
@@ -341,15 +362,15 @@
                         <div class="footer__privacy">
                             <div class="">&nbsp;</div>
                             <div class="">
-                                <p>Політика конфіденційності</p>
+                                <a href="">Політика конфіденційності</a>
                             </div>
                             <div class="">
-                                <p>Правила та умови</p>
+                                <a href="">Правила та умови</a>
                             </div>
                         </div>
                         <div class="footer__social">
-                            <img src="/img/faceboog.png" alt="">
-                            <img src="/img/youtube.png" alt="">
+                            <a href=""><img src="img/faceboog.png" alt=""></a>
+                            <a href=""><img src="img/youtube.png" alt=""></a>
                         </div>
                     </div>
                 </div>
