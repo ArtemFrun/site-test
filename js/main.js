@@ -23,20 +23,28 @@ function chbox(){
     const slideTab1 = document.getElementById('tab-btn-1');
     const slideTab2 = document.getElementById('tab-btn-2');
     const slideTab3 = document.getElementById('tab-btn-3');
+    const allSlide = document.getElementById('price-tabs');
+
+    let child = allSlide.children;
+    console.log(child.length);
+    for(let i=0; i<child.length; i++){
+        child[i].classList.remove('price-tabs__info__show');
+    }
 
     if(slideTab1.checked){
         let showElement = document.getElementById('content-1');
-        showElement.classList.add('price-tabs__info__show')
+
+        showElement.classList.add('price-tabs__info__show');
     }    
 
     if(slideTab2.checked){
         let showElement = document.getElementById('content-2');
-        showElement.classList.add('price-tabs__info__show')
+        showElement.classList.add('price-tabs__info__show');
     }    
 
     if(slideTab3.checked){
         let showElement = document.getElementById('content-3');
-        showElement.classList.add('price-tabs__info__show')
+        showElement.classList.add('price-tabs__info__show');
     }    
 }
 
@@ -44,7 +52,7 @@ function chbox(){
 
 
 
-document.getElementById("price-tabs__btn1").click();
+//document.getElementById("price-tabs__btn1").click();
 
 document.addEventListener('DOMContentLoaded', function(){
     
