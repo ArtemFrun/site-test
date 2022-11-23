@@ -1,9 +1,10 @@
 .benefits
     &-wrap
         margin: auto
-        width: 70%
-        display: grid
-        grid-template-columns: 1fr 1fr 1fr
+        max-width: 75%
+        display: flex
+        padding: 50px
+        padding-top: 0
     &__one, &__fast, &__functions
         padding: 15px
     &__text
@@ -19,3 +20,13 @@
         padding-top: 80px
         padding-bottom: 30px
 
+@media ( max-width: 1240px)
+    .benefits
+        &-wrap
+            max-width: 100%
+
+@media ( max-width: 800px)
+    .benefits
+        &__text
+            h2
+                font-size: 20px

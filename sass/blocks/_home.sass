@@ -1,9 +1,15 @@
 .home
     &-wrap
-        //margin-bottom: -180px
         position: relative
+    &__background
+        position: absolute
+        left: 0
+        right: 0
+        top: 0
+        bottom: 0
         background: url("../../img/image-8.jpg") no-repeat center center
         background-size: cover
+        margin-bottom: 230px
     &__top
         position: relative
         z-index: 3
@@ -13,26 +19,27 @@
         color: #fff
     &__title
         font-size: 24px
-        & h1
-            margin: auto
-            padding-top: 50px
-            width: 35%
+        max-width: 35%
+        margin: auto
+        padding-top: 50px
+            
     &__subtitle
         font-size: 14px
-        & h2
-            padding-top: 15px
-            margin: auto
-            width: 35%
+        max-width: 35%
+        padding-top: 15px
+        margin: auto
+            
     &__demo
         padding-top: 60px
     &__bottom
         position: relative
         z-index: 3
         padding: 50px
+        animation: showLeft 1s
         & img
             box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px
             max-width: 60%
-.home-wrap:after 
+.home__background:after 
     content: ''
     position: absolute
     top: 0
@@ -52,3 +59,32 @@
     100%
         left:0
         opacity: 0.5
+
+@media ( max-width: 1200px)
+    .home__title, .home__subtitle
+        max-width: 60%
+
+@media ( max-width: 800px)
+    .home
+        &-wrap
+            display: flex
+            flex-direction: column-reverse
+        &__title, &__subtitle
+            max-width: 100%
+            padding-left: 50px
+            padding-right: 50px
+        &__background
+            margin-bottom: 0
+
+@media ( max-width: 600px)
+    .home__bottom
+        img
+            max-width: 100%
+
+    .home  
+        &__title
+            font-size: 20px
+            
+        &__subtitle
+            font-size: 12px
+        
