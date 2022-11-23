@@ -3,8 +3,9 @@
         margin: auto
         max-width: 75%
         display: flex
-        padding: 50px
+        padding: 30px
         padding-top: 0
+        padding-bottom: 50
     &__one, &__fast, &__functions
         padding: 15px
     &__text
@@ -30,3 +31,18 @@
         &__text
             h2
                 font-size: 20px
+
+@media ( max-width: 550px)
+    .benefits
+        &-wrap
+            flex-wrap: wrap
+        &__text
+            &__description
+                font-size: 20px
+            h2
+                font-size: 28px
+            &::before
+                display: none
+        &__image
+            padding-top: 30px
+            padding-bottom: 30px
