@@ -44,10 +44,6 @@ function chbox(index){
 
 
 
-
-
-//document.getElementById("price-tabs__btn1").click();
-
 document.addEventListener('DOMContentLoaded', function(){
     
     const form = document.getElementById('form');
@@ -195,7 +191,8 @@ if(animeItems.length>0){
 
             if((pageYOffset > animItemOffset - animeItemPoint) && pageYOffset < (animItemOffset + animItemHeight)){
                 animItem.classList.add('_active')
-            } else {
+            } 
+            else {
                 animItem.classList.remove('_active')
             }
         }
