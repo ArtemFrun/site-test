@@ -2,18 +2,19 @@
     margin-top: 50px
     &-top, &-bottom
         padding: 150px
-        display: grid
-        grid-template-columns: 450px 450px
-        height: 750px
-        grid-gap: 150px
+        display: flex
+        //height: 750px
         text-align: left
-        justify-content: center    
+        justify-content: space-around
+        margin: auto
     &__demo
         margin-top: 30px
     &-top
         position: relative
         background-color: #F8FBFE
     &__image
+        width: 500px
+        height: 500px
         &__1
             position: absolute
             left: 0
@@ -31,6 +32,9 @@
             border-radius: 5px
             box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75)
     &__description
+        width: 500px
+        height: 600px
+        padding: 0 50
         transform: translateX(25%)
         opacity: 0
         transition: all 2s
@@ -45,6 +49,17 @@
             transform: translateX(0)
             opacity: 1
 
-//@media ( max-width: 1100px)
-
+@media ( max-width: 1240px)
+    .about
+        &-top, &-bottom
+            padding: 50px
+        &__image
+            width: 400px
+            height: 400px
+            &__1
+                width: 220px
+                height: 220px
+            &__2
+                width: 220px
+                height: 220px
 
