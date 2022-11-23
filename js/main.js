@@ -192,9 +192,9 @@ if(animeItems.length>0){
             if((pageYOffset > animItemOffset - animeItemPoint) && pageYOffset < (animItemOffset + animItemHeight)){
                 animItem.classList.add('_active')
             } 
-            else {
-                animItem.classList.remove('_active')
-            }
+            // else {
+            //     animItem.classList.remove('_active')
+            // }
         }
     }
     function offset(el) {
