@@ -176,3 +176,34 @@ document.addEventListener('DOMContentLoaded', function(){
 })
 
 
+const animeItems = document.querySelectorAll('._anim-items')
+
+if(animeItems.length>0){
+    function animOnScroll(params){
+        for(let index = 0; index < animeItems.length; index++){
+            const animItem = animeItems[index];
+            const animItemHeight = animItem.offsetHeight;
+            const animItemOffset = offset(animItem).top;
+            const animeStart = 4;
+
+            let animeItemPoint = window.innerHeight - animItemHeight / animeStart;
+            
+            if(animItemHeight > window.innerHeight){
+                animeItemPoint = window.innerHeight - window.innerHeight / animeStart;
+            }
+
+            if((pageYOffset > animItemOffset - animeItemPoint) && pageYOffset < (animItemOffset + animItemHeight)){
+                animItem.classList.add('_active')
+            } else {
+                animItem.classList.remove('_active')
+            }
+        }
+    }
+    function offset(el) {
+        const rect = el.getBoundingClientRect(),
+            scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+            scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        return {top: rect.top + scrollTop, letf: rect.letf + scrollLeft}
+    }
+}
+
