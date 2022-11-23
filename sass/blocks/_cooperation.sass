@@ -1,14 +1,16 @@
 .cooperation
     &__text
         margin: auto
-        max-width: 950px
+        max-width: 1050px
         color: #878B9A
+        padding: 0 50
     &__logo
         display: flex
         justify-content: space-between
         margin: 50px auto
         max-width: 950px
         flex-wrap: wrap
+        padding: 0 50
         &__1, &__2, &__3
             position: relative
             animation: showLogo 1s
@@ -18,6 +20,7 @@
         margin: 100px auto
         max-width: 1100px
         align-items: center
+        padding: 0 50
         & h2
             font-size: 32px
 
@@ -31,3 +34,15 @@
     100%
         left: 0
         opacity: 0.5
+
+@media ( max-width: 800px)
+    .cooperation
+        &__demo
+            flex-direction: column
+            margin-top: 50px
+            & h2
+                padding-bottom: 50px
+@media ( max-width: 500px)
+    .cooperation
+        &__logo
+            flex-direction: column
