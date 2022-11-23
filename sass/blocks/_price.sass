@@ -76,34 +76,20 @@
     display: none
 
 .price__title
-    position: relative
-    animation: showPriceTitle 1s
+    transform: translateY(-120%)
+    opacity: 0
+    transition: all 2s
+    &._active
+        transform: translateX(0)
+        opacity: 1
 
 .price-tabs
-    position: relative
-    animation: showPrice 1s
-
-@keyframes showPriceTitle
-    0% 
-        top: -100%
-        opacity: 0
-    50%
-        top: -50%
-        opacity: 0
-    100%
-        top: 0
-        opacity: 0.5
-
-@keyframes showPrice
-    0% 
-        left: -50%
-        opacity: 0
-    50%
-        left: -25%
-        opacity: 0
-    100%
-        left: 0
-        opacity: 0.5
+    transform: translatex(-25%)
+    opacity: 0
+    transition: all 2s
+    &._active
+        transform: translateX(0)
+        opacity: 1
 
 @media ( max-width: 1024px)
     .price

@@ -14,8 +14,12 @@
         position: relative
         z-index: 3
         margin-bottom: 50px
-        & ._active
-            animation: showLeft 1s
+        transform: translateX(-25%)
+        opacity: 0
+        transition: all 2s
+        &._active
+            transform: translateX(0)
+            opacity: 1
     &__title, &__subtitle
         color: #fff
     &__title
@@ -36,8 +40,12 @@
         position: relative
         z-index: 3
         padding: 50px
-        & ._active
-            animation: showLeft 1s
+        transform: translateX(-25%)
+        opacity: 0
+        transition: all 2s
+        &._active
+            transform: translateX(0)
+            opacity: 1
         & img
             box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px
             max-width: 60%
@@ -52,15 +60,15 @@
     z-index: 2
 
 
-@keyframes showLeft 
-    0% 
-        left:-100%
-        opacity: 0
-    50%
-        opacity: 0
-    100%
-        left:0
-        opacity: 0.5
+// @keyframes showLeft 
+//     0% 
+//         left:-100%
+//         opacity: 0
+//     50%
+//         opacity: 0
+//     100%
+//         left:0
+//         opacity: 0.5
 
 @media ( max-width: 1200px)
     .home__title, .home__subtitle
@@ -89,4 +97,3 @@
             
         &__subtitle
             font-size: 12px
-        

@@ -179,6 +179,7 @@ document.addEventListener('DOMContentLoaded', function(){
 const animeItems = document.querySelectorAll('._anim-items')
 
 if(animeItems.length>0){
+    window.addEventListener('scroll', animOnScroll);
     function animOnScroll(params){
         for(let index = 0; index < animeItems.length; index++){
             const animItem = animeItems[index];
@@ -206,4 +207,8 @@ if(animeItems.length>0){
         return {top: rect.top + scrollTop, letf: rect.letf + scrollLeft}
     }
 }
+
+setTimeout(() => {
+    animOnScroll();
+}, 300);
 

@@ -13,13 +13,7 @@
     &-top
         position: relative
         background-color: #F8FBFE
-        animation: showBlock1 2s
-
-    &-bottom
-        position: relative
-        animation: showBlock2 2s
     &__image
-        position: relative
         &__1
             position: absolute
             left: 0
@@ -36,25 +30,18 @@
         &__1, &__2
             border-radius: 5px
             box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75)
+    &__description
+        transform: translateX(25%)
+        opacity: 0
+        transition: all 2s
+        &._active
+            transform: translateX(0)
+            opacity: 1
+    &__image
+        transform: translateX(-25%)
+        opacity: 0
+        transition: all 2s
+        &._active
+            transform: translateX(0)
+            opacity: 1
 
-@keyframes showBlock1
-    0% 
-        grid-gap: 1000px
-        opacity: 0
-    50%
-        grid-gap: 500px
-        opacity: 0
-    100%
-        grid-gap: 150px
-        opacity: 0.5
-
-@keyframes showBlock2
-    0% 
-        grid-gap: 0px
-        opacity: 0
-    50%
-        grid-gap: 25px
-        opacity: 0
-    100%
-        grid-gap: 150px
-        opacity: 0.5
